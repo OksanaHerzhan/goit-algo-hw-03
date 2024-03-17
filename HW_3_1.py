@@ -1,4 +1,4 @@
-# завдання_1 з використанням функції
+# завдання_1_варіант_1
 
 from datetime import datetime
 
@@ -20,11 +20,13 @@ date_diff = get_days_from_today(user_date)
 print(f"Days from today: {date_diff}")
 
 
-# завдання_1 без використання функції
+# завдання_1_варіант_2
 
 from datetime import datetime
-first_date = datetime (year=1989, month=5, day=2)
-date_nows = datetime.today()
+def day_from_today ():
+    first_date = datetime (year=1989, month=5, day=2)
+    date_nows = datetime.today()
+    days_since = date_nows.toordinal() - first_date.toordinal()
+    return days_since
 
-days_since = date_nows.toordinal() - first_date.toordinal()
-print (days_since)
+print (day_from_today())
