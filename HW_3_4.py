@@ -1,17 +1,19 @@
 from datetime import datetime, timedelta
-users = [
-  {"name": "John Doe", "birthday": "1985.03.24"},
-  {"name": "Jane Smith", "birthday": "1990.01.27"},
-  {"name": "Will Smith", "birthday": "1995.03.20"},
-  {"name": "Kate Smith", "birthday": "1987.03.19"},
-  {"name": "Anna Smith", "birthday": "1997.05.17"}
-    ]
 
 def get_upcoming_birthdays (d, weekday:int):
+
     days_ahead = weekday - d.weekday()
     if days_ahead < 0:
         days_ahead +=7
     return d + timedelta(days = days_ahead)
+
+users = [
+    {"name": "John Doe", "birthday": "1985.03.24"},
+    {"name": "Jane Smith", "birthday": "1990.01.27"},
+    {"name": "Will Smith", "birthday": "1995.03.20"},
+    {"name": "Kate Smith", "birthday": "1987.03.19"},
+    {"name": "Anna Smith", "birthday": "1997.05.17"}
+]
 
 new_users = []
 for user in users:
@@ -40,4 +42,5 @@ for user in new_users:
             "name": user["name"],
             "congratulation_date": congratulation_date_str
         })
+
 print(upcoming_birthdays)
