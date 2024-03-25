@@ -18,15 +18,3 @@ while incur_input:
 
 date_diff = get_days_from_today(user_date)
 print(f"Days from today: {date_diff}")
-
-
-# завдання_1_варіант_2
-
-from datetime import datetime
-def day_from_today ():
-    first_date = datetime (year=1989, month=5, day=2)
-    date_nows = datetime.today()
-    days_since = date_nows.toordinal() - first_date.toordinal()
-    return days_since
-
-print (day_from_today())
