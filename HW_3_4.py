@@ -8,10 +8,10 @@ def get_upcoming_birthdays (d, weekday:int):
     return d + timedelta(days = days_ahead)
 
 users = [
-    {"name": "John Doe", "birthday": "1985.03.24"},
+    {"name": "John Doe", "birthday": "1985.03.30"},
     {"name": "Jane Smith", "birthday": "1990.01.27"},
-    {"name": "Will Smith", "birthday": "1995.03.20"},
-    {"name": "Kate Smith", "birthday": "1987.03.19"},
+    {"name": "Will Smith", "birthday": "1995.03.31"},
+    {"name": "Kate Smith", "birthday": "1987.04.02"},
     {"name": "Anna Smith", "birthday": "1997.05.17"}
 ]
 

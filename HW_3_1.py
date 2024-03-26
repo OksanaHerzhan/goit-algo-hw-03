@@ -2,7 +2,7 @@
 
 from datetime import datetime
 
-def get_days_from_today(first_date:datetime)->int:
+def get_days_from_today(first_date:str)->int:
     date_nows = datetime.today()
     return date_nows.toordinal()-first_date.toordinal()
 

@@ -18,9 +18,9 @@ while incur_input:
         else: 
             raise ValueError
     except ValueError:
-        print("Incorect data input. Use positive integer numbers, min should be less than max, quantity more than 0")
+        print (list())
         incur_input = True
 
 lottery_numbers = get_numbers_ticket(min_value,max_value,quantity)
 
-print(f"Your numbers is: {lottery_numbers}")
+print(f"Your numbers is: {sorted(lottery_numbers)}")
